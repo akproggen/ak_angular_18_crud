@@ -5,25 +5,19 @@ export class EmployeeModel {
     public city: string;
     public state: string;
     public emailId: string;
-    public contactNo: string;
+    public contactNumber: string;
+    public pinCode: string;
     public address: string;
 
 
-  constructor(
-    empId: number,
-    name: string,
-    city: string,
-    state: string,
-    emailId: string,
-    contactNo: string,
-    address: string
-  ) {
-    this.empId = empId;
-    this.name = name;
-    this.city = city;
-    this.state = state;
-    this.emailId = emailId;
-    this.contactNo = contactNo;
-    this.address = address;
+  constructor() {
+    this.empId = 0;
+    this.name = '';
+    this.city = '';
+    this.state = '';
+    this.emailId = '';
+    this.contactNumber = '';
+    this.pinCode = '';
+    this.address = '';
   }
 }
