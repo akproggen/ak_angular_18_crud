@@ -21,6 +21,8 @@
                     <th>Contact Nummber</th>
                     <th>Pin Code</th>
                     <th>Address</th>
+                    <th>Aktion</th>
+
                   </tr>
                 </thead>
                 <tbody>
@@ -33,6 +35,10 @@
                     <td>{{ employee.contactNumber }}</td>
                     <td>{{ employee.pinCode }}</td>
                     <td>{{ employee.address }}</td>
+                    <td>
+                      <button class="btn btn-danger" (click)="deleteEmployee(employee.empId)">Delete</button>
+                      <button class="btn btn-primary" (click)="editEmployee(employee)">Edit</button>
+                    </td>
                   </tr>
               </table>
             </div>
